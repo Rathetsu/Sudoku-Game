@@ -23,5 +23,5 @@ def backtracking(game):
 
 print_game(game)
 print("\n___________________________\n")
-backtracking(game[:])
+backtracking(game)
 print_game(game)
