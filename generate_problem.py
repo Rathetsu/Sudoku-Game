@@ -1,4 +1,4 @@
-#import solve
+import solve
 import backtracking
 from random import randint
 from math import *
@@ -16,8 +16,8 @@ game = [
     [0,0,0,0,0,0,0,0,0]
 ]
 
-backtracking(game)
-print_game(game)
+backtracking.backtracking(game)
+solve.print_game(game)
 
 #game = [[randint(1, 9) for i in range(9)] for j in range(9)]
 
@@ -45,8 +45,8 @@ def valid_game(game):
                 print("\n____________________________\n")
     return game
 """
-backtracking(game)
-print_game(game)
+#backtracking(game)
+#print_game(game)
 
 
 #print(valid_game(game))
