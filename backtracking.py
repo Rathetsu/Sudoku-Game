@@ -20,8 +20,10 @@ def backtracking(game):
                 game[r][c] = 0
 
     return False
-
+    
+"""
 print_game(game)
 print("\n___________________________\n")
 backtracking(game)
 print_game(game)
+"""

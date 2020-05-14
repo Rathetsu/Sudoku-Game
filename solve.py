@@ -2,6 +2,7 @@ from math import *
 
 
 # A test case that will be replaced by the output of the generating function once the algorithm is tested
+"""
 game = [
     [4,0,7,0,8,6,1,9,0],
     [0,1,5,3,0,0,0,6,0],
@@ -13,6 +14,7 @@ game = [
     [5,0,0,7,4,0,6,0,0],
     [0,6,0,0,9,0,0,5,0]
 ]
+"""
 
 # A function that prints out the test case above in console
 def print_game(game):         
