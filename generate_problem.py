@@ -1,25 +1,23 @@
-import solve
-import backtracking
+import grids
 from random import randint
 from math import *
 
 
-game = [
-    [0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0]
-]
+def pass_grid():
+    return grids.grid[randint(1, grids.num_of_grids)]
 
+
+
+"""
 backtracking.backtracking(game)
 solve.print_game(game)
+"""
 
-#game = [[randint(1, 9) for i in range(9)] for j in range(9)]
+
+"""
+game = [[randint(1, 9) for i in range(9)] for j in range(9)]
+"""
+
 
 """
 def unique_list(lst):

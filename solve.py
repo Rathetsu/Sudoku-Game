@@ -1,22 +1,22 @@
 from math import *
 
 
-# A test case that will be replaced by the output of the generating function once the algorithm is tested
+
 """
 game = [
-    [4,0,7,0,8,6,1,9,0],
-    [0,1,5,3,0,0,0,6,0],
-    [6,0,3,0,0,0,5,2,0],
-    [0,0,0,0,6,2,4,3,0],
-    [0,4,0,8,0,5,0,0,0],
-    [2,0,6,0,3,0,9,0,1],
-    [1,0,0,0,5,8,0,4,9],
-    [5,0,0,7,4,0,6,0,0],
-    [0,6,0,0,9,0,0,5,0]
+    [0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0]
 ]
 """
 
-# A function that prints out the test case above in console
+# A function that prints out a grid in console
 def print_game(game):         
     for i in range(len(game)):
         if i % 3 == 0 and i != 0:
