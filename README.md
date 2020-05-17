@@ -11,7 +11,7 @@ The program features a simple GUI with 2 buttons.
  1. The **Solve** button prints the whole solution of the current board.
  2. The **Restart** button removes all the entries and prints a new grid on the board.
 
-
+> Note: The GUI is currently buggy and needs future improvement. 
 
 ### The Solving Algorithm 
 The code solves the Sudoku board using the **backtracking algorithm**.
