@@ -8,9 +8,15 @@ MARGIN = 20  # Pixels around the board.
 SIDE = 50  # Width of every board cell.
 WIDTH = HEIGHT = MARGIN * 2 + SIDE * 9  # Width and height of the board.
 
+
 class Board(Frame):
     
     game = generate_problem.pass_grid()
+    empty_cells = 0
+    for i in range(9):
+        for j in range(9):
+            if game[i][j] == 0:
+                empty_cells += 1
 
     def __init__(self, parent):
         self.parent = parent
@@ -76,7 +82,7 @@ class Board(Frame):
     def victory():
         x1 = y1 = MARGIN + SIDE * 2
         x2 = y2 = MARGIN + SIDE * 7
-        self.canvas.create_rectangle(x1, y1, x2, y2, tags = "victory", fill = "green", outline = "green")
+        self.canvas.create_oval(x1, y1, x2, y2, tags = "victory", fill = "green", outline = "green")
         x = y = MARGIN + 4 * SIDE + SIDE / 2
         self.canvas.create_text(x, y, text = "VICTORY!", tags = "victory", fill = "white", font = ("Times", 32))
 
@@ -90,12 +96,13 @@ class Board(Frame):
                 self.canvas.delete("wrong_number")
                 self.canvas.create_text(x, y, text = int(event.char), tags = "numbers", fill = "blue")
                 self.highlighted()
+                empty_cells -= 1
             else:
                 self.wrong_highlighted()
                 self.canvas.create_text(x, y, text = int(event.char), tags = "wrong_number", fill = "red")
             self.col = -1   
             self.row = -1
-            if not methods.next_empty:
+            if empty_cells <= 0:
                 self.victory()
 
     # A function that removes the user's answers and returns the board to the original state.
