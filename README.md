@@ -13,7 +13,7 @@ The program features a simple GUI with 2 buttons.
 
 
 
-### The Solving Algorithm
+### The Solving Algorithm 
 The code solves the Sudoku board using the **backtracking algorithm**.
 The upper-bound *time complexity* is O(n(9^(n\*n))), which is the same time complexity for the naive approach to the problem.
 However my implementation of the algorithm is efficient enough so the time taken will be much less than the naive algorithm albeit the upper-bound time complexity remaining the same.
