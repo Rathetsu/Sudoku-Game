@@ -1,5 +1,5 @@
 import generate_problem
-import solve
+import methods
 
 
 # Here we assign the list 'game' with the random grid from the grids.py file
@@ -24,8 +24,9 @@ def backtracking(game):
 
     return False
 
-
+"""
 solve.print_game(game)
 print("\n___________________________\n")
 backtracking(game)
 solve.print_game(game)
+"""
