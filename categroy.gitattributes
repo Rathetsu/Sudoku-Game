@@ -3,3 +3,6 @@
 *.pkg linguist-detectable = false
 *.py linguist-detectable = true
 *.pyd linguist-detectable = true
+
+build/GAME/* linguist-vendored
+dist/* linguist-vendored
