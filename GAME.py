@@ -13,7 +13,6 @@ class Board(Frame):
     game = generate_problem.pass_grid()
 
     def __init__(self, parent):
-        #self.game = game
         self.parent = parent
         self.row = 0
         self.col = 0
@@ -48,8 +47,6 @@ class Board(Frame):
                     x = MARGIN + j * SIDE + SIDE / 2
                     y = MARGIN + i * SIDE + SIDE / 2
                     self.canvas.create_text(x, y, text = number, tags = "numbers", fill = "black")
-                #else:
-                    # This else logic is only useful when we use the clear answers button.
 
     # A function that highlights the selected cell with the left mouse button.
     def highlighted(self):
@@ -72,7 +69,6 @@ class Board(Frame):
     # A function that takes the number inputed by the user.
     def num_input(self, event):
         if self.row >= 0 and self.col >= 0 and event.char in "123456789":
-            #self.game.game[self.row][self.col] = int(event.char)
             x = MARGIN + self.col * SIDE + SIDE / 2
             y = MARGIN + self.row * SIDE + SIDE / 2
             self.canvas.create_text(x, y, text = int(event.char), tags = "numbers", fill = "blue")
