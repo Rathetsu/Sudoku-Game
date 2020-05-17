@@ -73,8 +73,8 @@ class Board(Frame):
     def num_input(self, event):
         if self.row >= 0 and self.col >= 0 and event.char in "123456789":
             #self.game.game[self.row][self.col] = int(event.char)
-            x = MARGIN + self.row * SIDE + SIDE / 2
-            y = MARGIN + self.col * SIDE + SIDE / 2
+            x = MARGIN + self.col * SIDE + SIDE / 2
+            y = MARGIN + self.row * SIDE + SIDE / 2
             self.canvas.create_text(x, y, text = int(event.char), tags = "numbers", fill = "blue")
             self.highlighted()
             self.col = -1   
