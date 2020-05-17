@@ -1,8 +1,0 @@
-*.tex linguist-detectable = false
-*.dll linguist-detectable = false
-*.pkg linguist-detectable = false
-*.py linguist-detectable = true
-*.pyd linguist-detectable = true
-
-build/GAME/* linguist-vendored
-dist/* linguist-vendored
