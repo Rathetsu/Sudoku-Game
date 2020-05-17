@@ -1,5 +1,5 @@
-import backtracking
-import solve
+import solver
+import methods
 import generate_problem
 from time import *
 from tkinter import *
@@ -79,7 +79,7 @@ class Board(Frame):
             self.highlighted()
             self.col = -1   
             self.row = -1
-            if not solve.next_empty:
+            if not methods.next_empty:
                 self.victory()
 
     # A function that removes the user's answers and returns the board to the original state.
