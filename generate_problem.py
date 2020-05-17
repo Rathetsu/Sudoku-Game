@@ -4,7 +4,7 @@ from math import *
 
 
 def pass_grid():
-    return grids.grid[randint(1, grids.num_of_grids)]
+    return grids.grid[randint(1, grids.num_of_grids - 1)]
 
 
 
