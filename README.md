@@ -4,7 +4,7 @@ Sudoku is a logic-based, number-placement puzzle.
 The objective is to fill a 9×9 grid with digits so that each column, each row, and each of the nine 3×3 sub-grids that compose the grid contain all of the digits from 1 to 9. 
 
 ### Overview 
-The executable file can be found in the dist folder.
+Run the GAME.py file for the GUI version of the app.
 The program allows the user to solve a Sudoku board and lets him know if he makes a wrong decision. 
 The program features a simple GUI with 2 buttons.
 
