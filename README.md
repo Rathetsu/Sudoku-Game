@@ -30,9 +30,10 @@ The program features a simple GUI with 2 buttons.
 ## Running The Program
 
 Run the [GAME.py](https://github.com/Rathetsu/Sudoku-Game/blob/master/GAME.py) file for the GUI version of the app.
-use `python3 GAME.py`
 
-here is a screenshot of the program at run-time:
+Use `python3 GAME.py`
+
+Here is a screenshot of the program at run-time:
 
 ![Screenshot of the program at run-time](https://i.imgur.com/FEGqubt.png)
   
